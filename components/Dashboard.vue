@@ -6,37 +6,32 @@
         width="385"
         outlined
         style="border-radius:10px"
-        v-for="(c , i) in cards"
+        v-for="(c, i) in cards"
         :key="i"
-        class="mt-5"
+        class="mt-5 mx-auto mr-3"
       >
         <v-list-item three-line>
           <v-list-item-content>
             <v-list-item-title class="text-h5 mb-1">
-              {{c.title}}
+              {{ c.title }}
             </v-list-item-title>
             <v-list-item-subtitle>
-              <span
-                :style="c.style"
-                class="text--accent-1 "
-              >{{c.subtitle}}</span>
+              <span :style="c.style" class="text--accent-1 ">{{
+                c.subtitle
+              }}</span>
             </v-list-item-subtitle>
           </v-list-item-content>
 
-          <v-icon
-            size="110"
-            :color="c.icolor"
-          >{{c.icon}}</v-icon>
+          <v-icon size="110" :color="c.icolor">{{ c.icon }}</v-icon>
         </v-list-item>
 
         <v-card-actions
           class="orange lighten-5 d-flex align-end "
           style="height:40px;margin-top:40px"
         >
-          <span :style="c.fcolor">{{c.footer}}</span>
+          <span :style="c.fcolor">{{ c.footer }}</span>
         </v-card-actions>
       </v-card>
-
     </div>
     <div class="row mt-4 mb-4">
       <div class="col-md-6 ">
@@ -67,7 +62,7 @@ export default {
           footer: "+30% dari minggu lalu",
           style: "font-size:32px;font-weight:bold;color:#66BB6A",
           fcolor: "color:#66BB6A",
-          icolor: "#A5D6A7",
+          icolor: "#A5D6A7"
         },
         {
           title: "PJP Lama",
@@ -76,7 +71,7 @@ export default {
           footer: "+20% dari minggu lalu",
           style: "font-size:32px;font-weight:bold;color:#7E57C2",
           fcolor: "color:#66BB6A",
-          icolor: "#D1C4E9",
+          icolor: "#D1C4E9"
         },
         {
           title: "PJP Baru",
@@ -85,7 +80,7 @@ export default {
           footer: "-5% dari minggu lalu",
           style: "font-size:32px;font-weight:bold;color:#039BE5",
           fcolor: "color:#EF5350",
-          icolor: "#B3E5FC",
+          icolor: "#B3E5FC"
         },
         {
           title: "PJP Lama",
@@ -94,10 +89,10 @@ export default {
           footer: "-15% dari minggu lalu",
           style: "font-size:32px;font-weight:bold;color:#EF5350",
           fcolor: "color:#EF5350",
-          icolor: "#FFCDD2",
-        },
-      ],
+          icolor: "#FFCDD2"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
